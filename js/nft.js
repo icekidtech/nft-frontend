@@ -18,9 +18,9 @@ async function displayFeaturedNFTs() {
   // Clear previous NFTs
   featuredContainer.innerHTML = '';
   
-  // Get 5 random NFT IDs between 1 and 104
+  // Get 10 random NFT IDs between 1 and 104
   const randomIds = [];
-  while (randomIds.length < 5) {
+  while (randomIds.length < 10) {
     const randomId = Math.floor(Math.random() * TOTAL_SUPPLY) + 1;
     if (!randomIds.includes(randomId)) {
       randomIds.push(randomId);

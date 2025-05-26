@@ -1,4 +1,4 @@
-const CONTRACT_ADDRESS = "0xYourContractAddressHere"; // Replace with actual address
+const CONTRACT_ADDRESS = "0x1234567890abcdef1234567890abcdef12345678"; // Replace with actual address
 
 const CONTRACT_ABI = [
   { "inputs": [], "name": "mintRandomNFT", "outputs": [], "stateMutability": "nonpayable", "type": "function" },
