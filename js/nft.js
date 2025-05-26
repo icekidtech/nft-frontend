@@ -20,7 +20,7 @@ async function displayFeaturedNFTs() {
   
   // Get 10 random NFT IDs between 1 and 104
   const randomIds = [];
-  while (randomIds.length < 10) {
+  while (randomIds.length < 8) {
     const randomId = Math.floor(Math.random() * TOTAL_SUPPLY) + 1;
     if (!randomIds.includes(randomId)) {
       randomIds.push(randomId);
