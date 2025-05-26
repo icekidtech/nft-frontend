@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if (document.getElementById('featured-nfts')) {
     displayFeaturedNFTs();
     
-    // Update featured NFTs every 5 seconds
-    setInterval(displayFeaturedNFTs, 5000);
+    // Update featured NFTs every 10 seconds
+    setInterval(displayFeaturedNFTs, 10000);
   }
   
   // Update remaining NFTs if on home page or mint page
