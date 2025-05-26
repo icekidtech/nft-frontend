@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mint AstralPackLegends NFT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <div class="logo">AstralPackLegends</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="mint.html" class="active">Mint</a></li>
+        </ul>
+      </nav>
+      <button class="wallet-btn connect-wallet-btn">Connect Wallet</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Mint Your Cosmic NFT</h1>
+        <p>Connect your wallet to mint a randomly selected NFT from the AstralPackLegends collection</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="nft-stats">
+        <p id="remaining-nfts">Remaining NFTs: Loading...</p>
+      </div>
+      
+      <div class="mint-section hidden">
+        <h2>Mint a Random Cosmic NFT</h2>
+        <p>Click the button below to mint your random NFT from the AstralPackLegends collection. Each NFT is unique and represents a celestial entity from the cosmos.</p>
+        
+        <button id="mint-btn" class="mint-btn">Mint NFT</button>
+        
+        <div id="mint-status" class="mint-status"></div>
+        
+        <div id="minted-nft" class="hidden">
+          <!-- Minted NFT will appear here -->
+        </div>
+      </div>
+      
+      <div class="mint-section" id="connect-first">
+        <h2>Connect Your Wallet</h2>
+        <p>Please connect your wallet to the Lisk Sepolia testnet to mint NFTs.</p>
+        <button class="wallet-btn connect-wallet-btn">Connect Wallet</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="logo">AstralPackLegends</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="mint.html">Mint</a>
+      </div>
+      <p class="copyright">© 2025 AstralPackLegends. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.ethers.io/lib/ethers-5.6.umd.min.js"></script>
+  <script src="js/contract.js"></script>
+  <script src="js/wallet.js"></script>
+  <script src="js/nft.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
