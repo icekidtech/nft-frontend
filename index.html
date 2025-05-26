@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AstralPackLegends - Cosmic NFT Collection</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <div class="logo">AstralPackLegends</div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="mint.html">Mint</a></li>
+        </ul>
+      </nav>
+      <button class="wallet-btn connect-wallet-btn">Connect Wallet</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Welcome to AstralPackLegends</h1>
+        <p>Mint Your Cosmic NFT and join the stellar community of collectors exploring the cosmic universe</p>
+        <button class="wallet-btn connect-wallet-btn">Connect Wallet</button>
+      </div>
+    </section>
+
+    <section class="nft-section">
+      <div class="container">
+        <h2 class="section-title">Featured Cosmic NFTs</h2>
+        <div class="nft-stats">
+          <p id="remaining-nfts">Remaining NFTs: Loading...</p>
+        </div>
+        
+        <div class="nft-grid" id="featured-nfts">
+          <!-- NFTs will be dynamically loaded here -->
+          <div class="nft-loading">
+            <div class="spinner"></div>
+            <p>Loading featured NFTs...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="logo">AstralPackLegends</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="mint.html">Mint</a>
+      </div>
+      <p class="copyright">© 2025 AstralPackLegends. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.ethers.io/lib/ethers-5.6.umd.min.js"></script>
+  <script src="js/contract.js"></script>
+  <script src="js/wallet.js"></script>
+  <script src="js/nft.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
