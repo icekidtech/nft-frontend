@@ -23,7 +23,7 @@ async function connectWallet() {
       // Check if we're on the right network (Lisk Sepolia)
       const chainId = await window.ethereum.request({ method: 'eth_chainId' });
       // Replace with actual Lisk Sepolia chain ID
-      if (chainId !== '0x1234') { // placeholder - use correct Lisk Sepolia chain ID
+      if (chainId !== '4202') { // placeholder - use correct Lisk Sepolia chain ID
         alert('Please switch to Lisk Sepolia testnet to use this dApp');
       }
       
