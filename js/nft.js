@@ -2,7 +2,10 @@
 
 async function fetchNFTMetadata(tokenId) {
   try {
-    const response = await fetch(`${METADATA_BASE_URL}${tokenId}.json`);
+    // Add a CORS proxy before the URL
+    const corsProxy = "https://cors-anywhere.herokuapp.com/";
+    const url = `${corsProxy}${METADATA_BASE_URL}${tokenId}.json`;
+    const response = await fetch(url);
     if (!response.ok) throw new Error('Failed to fetch metadata');
     return await response.json();
   } catch (error) {
